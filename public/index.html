@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI</title>
+    <link rel="stylesheet" href="../src/styles/style.css" />
+    <script defer src="../src/BMI.js"></script>
+    <script defer src="../src/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Check your BMI</h1>
+      <p>Enter your weight and height below to check your BMI results</p>
+      <div class="form">
+        <div class="form-section">
+          <label for="weight">Put your weight in here (KG)</label>
+          <input id="weight" type="number" placeholder="60" />
+        </div>
+        <div class="form-section">
+          <label for="height">And your height in here (CM)</label>
+          <input id="height" type="number" placeholder="167" />
+        </div>
+        <button id="btn">Calculate BMI</button>
+        <p class="result">
+          Your BMI is <strong id="result"></strong> which mean You are
+          <strong id="category"></strong>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
